@@ -1,82 +1,39 @@
-# 🧪 Task 4 - Packet Analysis with Wireshark (Alfido Tech Cybersecurity Internship)
+# Task 4: Packet Analysis with Wireshark
 
-## 👩‍💻 Intern: Masira Taj  
-**Internship Program**: Alfido Tech - Cybersecurity Internship  
-**Task Number**: 4  
-**Task Name**: Packet Analysis using Wireshark  
-**Platform**: Linux (Kali)
+This repository contains my work for **Task 4: Packet Analysis with Wireshark** as part of the **Alfido Tech Cybersecurity Internship**.
 
----
+## 🔍 Objective
 
-## 📌 Task Objective
-
-To analyze network packets in real time using **Wireshark** and detect protocols like **DNS** and **HTTP**. The objective was to capture live traffic, apply filters, and analyze packet structures — a key skill in network security and threat hunting.
-
----
+To capture and analyze network packets using **Wireshark** to detect and inspect network activity such as HTTP and DNS requests.
 
 ## 🛠️ Tools Used
 
-- 🐧 **Kali Linux**
-- 📡 **Wireshark** (Network Protocol Analyzer)
-- 🌐 Browser to generate HTTP/DNS traffic
+- **Wireshark** – For capturing and analyzing network packets
+- **Linux (Kali)** – Operating system used for the task
+- **Filters** – `http`, `dns` used to identify specific types of traffic
 
----
+## 📸 Screenshots
 
-## 🧭 Task Steps
+| Screenshot | Description |
+|------------|-------------|
+| `01-wireshark-interface-selection.png` | Selected the `eth0` network interface for capturing packets |
+| `02-started-capturing-on-eth0.png` | Live packet capture in progress on selected interface |
+| `03-http-filter-applied.png` | Applied HTTP filter to isolate web traffic |
+| `04-dns-filter-applied.png` | Applied DNS filter to view domain name queries |
 
-### 1. Launching Wireshark
-Opened Wireshark and viewed all available network interfaces.
+> ⚠️ The `.pcapng` file has not been included in this repository to protect network privacy and user data.
 
-📸 Screenshot:  
-`01-wireshark-interface-selection.png`
+## 📌 Summary
 
----
+Using Wireshark, I was able to:
+- Capture live network traffic
+- Apply filters to analyze HTTP and DNS protocols
+- Understand packet details like source, destination, and protocol type
 
-### 2. Capturing Packets on eth0
-Selected the **eth0** interface and began live packet capture.
+This task helped me gain hands-on experience with packet sniffing and interpreting common network behaviors.
 
-📸 Screenshot:  
-`02-started-capturing-on-eth0.png`
+## 👨‍💻 Intern Info
 
----
+This task is part of the **Alfido Tech Cybersecurity Internship**.
 
-### 3. Filtering HTTP Packets
-Used the filter `http` to isolate HTTP traffic and inspect requests/responses.
 
-📸 Screenshot:  
-`03-http-filter-applied.png`
-
----
-
-### 4. Filtering DNS Packets
-Used the filter `dns` to observe domain name resolution queries and replies.
-
-📸 Screenshot:  
-`04-dns-filter-applied.png`
-
----
-
-### 5. Packet Capture File
-The complete `.pcapng` file from the scan is included for reference:
-
-📂 File: `task4_capture.pcapng`
-
-You can open this file in Wireshark to review the actual captured data, filters, and packet structures.
-
----
-
-## 🔍 Observations
-
-- **HTTP Traffic**: GET and POST requests to visited websites were visible.
-- **DNS Queries**: Revealed domain resolution requests to external DNS servers.
-- **Security Insight**: These filters are critical for identifying abnormal traffic patterns, phishing attempts, or malware communication.
-
----
-
-## ✅ Task Outcome
-
-✔️ Successfully completed live packet capture  
-✔️ Applied protocol filters (HTTP, DNS)  
-✔️ Analyzed captured traffic  
-✔️ Shared `.pcapng` file for evidence  
-✔️ Gained hands-on experi
